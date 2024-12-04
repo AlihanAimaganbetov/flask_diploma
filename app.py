@@ -21,7 +21,7 @@ from model import GCN  # Убедитесь, что файл model.py сущес
 # Установка устройства: используем GPU, если он доступен, иначе CPU
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
-
+G = ox.load_graphml("almaty_graph.gpickle")
 
 model = GCN()
 model.load_state_dict(torch.load('model_name.pth',map_location=torch.device('cpu'),weights_only=True))
@@ -67,7 +67,7 @@ def predict():
         print(f"Start point: {start_point}, End point: {end_point}")
 
         # Загрузка графа через osmnx
-        G = ox.load_graphml("almaty_graph.gpickle")
+
 
         # Преобразуем координаты в индексы узлов графа (например, с помощью nearest_nodes из osmnx)
         start_node = ox.distance.nearest_nodes(G, X=start_lon, Y=start_lat)
