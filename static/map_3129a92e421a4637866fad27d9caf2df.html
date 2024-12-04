@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_932e707dba9507dd3de06b1e92a5c163 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_932e707dba9507dd3de06b1e92a5c163" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_932e707dba9507dd3de06b1e92a5c163 = L.map(
+                "map_932e707dba9507dd3de06b1e92a5c163",
+                {
+                    center: [43.242384900000005, 76.93115706226122],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cdd6973a86005336f6ba8f5c32a3fdfb = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_cdd6973a86005336f6ba8f5c32a3fdfb.addTo(map_932e707dba9507dd3de06b1e92a5c163);
+        
+    
+            var marker_fcad972174098b9720254ebd421ca709 = L.marker(
+                [43.2428723, 76.93466455000001],
+                {}
+            ).addTo(map_932e707dba9507dd3de06b1e92a5c163);
+        
+    
+            var icon_d9420482111cf3c49c737e48698482c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fcad972174098b9720254ebd421ca709.setIcon(icon_d9420482111cf3c49c737e48698482c7);
+        
+    
+        var popup_86b2d7da246a2276f2f7bae28159ce85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87910a8ff3b83246c4dd8ba4812fd77c = $(`<div id="html_87910a8ff3b83246c4dd8ba4812fd77c" style="width: 100.0%; height: 100.0%;">Начальная точка</div>`)[0];
+                popup_86b2d7da246a2276f2f7bae28159ce85.setContent(html_87910a8ff3b83246c4dd8ba4812fd77c);
+            
+        
+
+        marker_fcad972174098b9720254ebd421ca709.bindPopup(popup_86b2d7da246a2276f2f7bae28159ce85)
+        ;
+
+        
+    
+    
+            var marker_511334d443f3dd5354fe8735127de671 = L.marker(
+                [43.2418975, 76.92764957452243],
+                {}
+            ).addTo(map_932e707dba9507dd3de06b1e92a5c163);
+        
+    
+            var icon_4e54b1f793622f2556453f81ba8908fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_511334d443f3dd5354fe8735127de671.setIcon(icon_4e54b1f793622f2556453f81ba8908fd);
+        
+    
+        var popup_9336e32ba971165f519a19df8e34a706 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_310ba6dd5fc0b72e492ca551003bc1b8 = $(`<div id="html_310ba6dd5fc0b72e492ca551003bc1b8" style="width: 100.0%; height: 100.0%;">Конечная точка</div>`)[0];
+                popup_9336e32ba971165f519a19df8e34a706.setContent(html_310ba6dd5fc0b72e492ca551003bc1b8);
+            
+        
+
+        marker_511334d443f3dd5354fe8735127de671.bindPopup(popup_9336e32ba971165f519a19df8e34a706)
+        ;
+
+        
+    
+    
+            var poly_line_fdfa5c0808f23d89590a60bbae20364c = L.polyline(
+                [[43.2437819, 76.9341381], [43.2455164, 76.9338936], [43.2455061, 76.9337453], [43.2454006, 76.9322379], [43.2452678, 76.930338], [43.2435095, 76.9305792], [43.2424757, 76.9307078], [43.2423868, 76.9290067], [43.2423043, 76.927777]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_932e707dba9507dd3de06b1e92a5c163);
+        
+</script>
+</html>

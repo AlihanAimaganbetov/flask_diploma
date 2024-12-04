@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d2d3f4a6758e1e4b99fa89b53f59ff7d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d2d3f4a6758e1e4b99fa89b53f59ff7d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d2d3f4a6758e1e4b99fa89b53f59ff7d = L.map(
+                "map_d2d3f4a6758e1e4b99fa89b53f59ff7d",
+                {
+                    center: [43.270840275, 76.88867743700963],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_03ae4d225d107939a8b2d64403ec8ad3 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_03ae4d225d107939a8b2d64403ec8ad3.addTo(map_d2d3f4a6758e1e4b99fa89b53f59ff7d);
+        
+    
+            var marker_3c814d515fb45f7800c2b166a8a502e8 = L.marker(
+                [43.30685455, 76.86844810542465],
+                {}
+            ).addTo(map_d2d3f4a6758e1e4b99fa89b53f59ff7d);
+        
+    
+            var icon_87e04221c8beefb54a0a0305cd8913bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3c814d515fb45f7800c2b166a8a502e8.setIcon(icon_87e04221c8beefb54a0a0305cd8913bf);
+        
+    
+        var popup_aabdd195ea5aafe79bc1cce18157bcea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de5848eb153c56efe8157e5d60511159 = $(`<div id="html_de5848eb153c56efe8157e5d60511159" style="width: 100.0%; height: 100.0%;">Начальная точка</div>`)[0];
+                popup_aabdd195ea5aafe79bc1cce18157bcea.setContent(html_de5848eb153c56efe8157e5d60511159);
+            
+        
+
+        marker_3c814d515fb45f7800c2b166a8a502e8.bindPopup(popup_aabdd195ea5aafe79bc1cce18157bcea)
+        ;
+
+        
+    
+    
+            var marker_f4948365c616f0bc233174d259aa81ef = L.marker(
+                [43.234826, 76.90890676859462],
+                {}
+            ).addTo(map_d2d3f4a6758e1e4b99fa89b53f59ff7d);
+        
+    
+            var icon_804a78df58a9f0f29ad251c9e8ca30c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f4948365c616f0bc233174d259aa81ef.setIcon(icon_804a78df58a9f0f29ad251c9e8ca30c2);
+        
+    
+        var popup_e0c30b43c5a22d9372ea26086b4b45d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a607a38cd1ce0a3b2b81a7f222ffc0c = $(`<div id="html_0a607a38cd1ce0a3b2b81a7f222ffc0c" style="width: 100.0%; height: 100.0%;">Конечная точка</div>`)[0];
+                popup_e0c30b43c5a22d9372ea26086b4b45d2.setContent(html_0a607a38cd1ce0a3b2b81a7f222ffc0c);
+            
+        
+
+        marker_f4948365c616f0bc233174d259aa81ef.bindPopup(popup_e0c30b43c5a22d9372ea26086b4b45d2)
+        ;
+
+        
+    
+    
+            var poly_line_747a669e9cf8a8ca1f35cea4d0734af7 = L.polyline(
+                [[43.3067182, 76.8685604], [43.3072028, 76.8687182], [43.3078113, 76.8688848], [43.3078032, 76.8693713], [43.3085006, 76.8696824], [43.3078429, 76.8733707], [43.3084266, 76.8735332], [43.3087702, 76.8736288], [43.308177, 76.8753862], [43.3069007, 76.8790584], [43.3061928, 76.8810749], [43.3055206, 76.8831242], [43.304718, 76.8855617], [43.3037597, 76.8883603], [43.3022991, 76.8928358], [43.3024665, 76.8940294], [43.3025919, 76.8941715], [43.3027945, 76.8951069], [43.3027515, 76.8951601], [43.3025896, 76.8961135], [43.3026092, 76.8961818], [43.3014913, 76.897194], [43.3007181, 76.8975135], [43.2970147, 76.8991561], [43.2958577, 76.8995077], [43.2954267, 76.8996293], [43.2949798, 76.8997584], [43.2945961, 76.8998817], [43.2921976, 76.9005548], [43.2914745, 76.9007588], [43.2906116, 76.9010396], [43.2850437, 76.9033597], [43.2827546, 76.9044337], [43.2816694, 76.9048937], [43.2815374, 76.9049535], [43.2771596, 76.9061847], [43.276656, 76.9064596], [43.276283, 76.9067648], [43.275538, 76.9076401], [43.2738685, 76.9092827], [43.2735764, 76.9096032], [43.2702994, 76.9123498], [43.2696959, 76.9121479], [43.2691339, 76.911984], [43.268257, 76.9121637], [43.2677094, 76.9119918], [43.2666155, 76.9119869], [43.2661665, 76.9104643], [43.266062, 76.9105195], [43.266098, 76.9107138], [43.2661586, 76.9109807], [43.2616835, 76.9130103], [43.2609683, 76.9139095], [43.2597459, 76.9140208], [43.2578036, 76.9143115], [43.2561562, 76.9144896], [43.2544115, 76.9147181], [43.2527638, 76.9149252], [43.2526826, 76.9149352], [43.2510073, 76.9151503], [43.2493455, 76.9153365], [43.2476613, 76.9155968], [43.2459271, 76.9158201], [43.2442759, 76.9160551], [43.2425213, 76.9162733], [43.2421552, 76.9163254], [43.2411299, 76.9159935], [43.2374716, 76.9135049], [43.237182, 76.912517], [43.2361665, 76.9108019], [43.236034, 76.9104836], [43.2358691, 76.9091091], [43.2353545, 76.9091712]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_d2d3f4a6758e1e4b99fa89b53f59ff7d);
+        
+</script>
+</html>
